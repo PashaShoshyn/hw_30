@@ -1,0 +1,48 @@
+.box {
+
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: render 4s  ease-in-out infinite;
+
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes render {
+  0% {
+    top: 0;
+    left: 0px;
+    background-color: red;
+  }
+
+  25% {
+    top: 600px;
+    left: 0px;
+    background-color: blue;
+  }
+
+  50% {
+    top: 600px;
+    left: 1400px;
+    background-color: green;
+  }
+
+  75% {
+    top: 0px;
+    left: 1400px;
+    background-color: yellow;
+  }
+
+  100% {
+    top: 0;
+    left: 0px;
+    background-color: red;
+  }
+}
